@@ -1,4 +1,5 @@
 import React from "react";
+import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -6,11 +7,11 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-between items-start gap-10">
         
         {/* Logo Section */}
-        <div className="w-full md:w-1/5">
+        <div className="md:w-1/5">
           <img
-            src="/logo.png"
+            src="/logo2.png"
             alt="Samarth Sankalp Logo"
-            className="w-24 h-24 mx-auto md:mx-0"
+            className="min-w-32 h-32 mx-auto md:mx-0"
           />
         </div>
 
@@ -63,7 +64,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 py-2 px-4 border border-gray-300 rounded-md focus:outline-none"
+                className="flex-1 py-2 w-40 px-4 border border-gray-300 rounded-md focus:outline-none"
               />
               <button className="py-2 px-6 bg-black text-white rounded-md hover:bg-gray-800 transition">
                 Subscribe
@@ -81,17 +82,15 @@ const Footer = () => {
         <p className="text-sm text-gray-500">
           © 2024 Samarth Sankalp. All rights reserved.
         </p>
+      
         <div className="flex items-center gap-4 mt-4 md:mt-0">
-          <a href="#" className="text-gray-600 hover:text-black">Privacy Policy</a>
-          <a href="#" className="text-gray-600 hover:text-black">Terms of Service</a>
-          <a href="#" className="text-gray-600 hover:text-black">Cookies Settings</a>
+        <div className="flex items-center gap-4 mt-4 md:mt-0">
+          <a href="#" className="text-gray-600 hover:text-black"><FaFacebookF size={20} /></a>
+          <a href="#" className="text-gray-600 hover:text-black"><FaInstagram size={20} /></a>
+          <a href="#" className="text-gray-600 hover:text-black"><FaTwitter size={20} /></a>
+          <a href="#" className="text-gray-600 hover:text-black"><FaLinkedinIn size={20} /></a>
+          <a href="#" className="text-gray-600 hover:text-black"><FaYoutube size={20} /></a>
         </div>
-        <div className="flex items-center gap-4 mt-4 md:mt-0">
-          <a href="#" className="text-gray-600 hover:text-black"><i className="fab fa-facebook-f"></i></a>
-          <a href="#" className="text-gray-600 hover:text-black"><i className="fab fa-instagram"></i></a>
-          <a href="#" className="text-gray-600 hover:text-black"><i className="fab fa-twitter"></i></a>
-          <a href="#" className="text-gray-600 hover:text-black"><i className="fab fa-linkedin-in"></i></a>
-          <a href="#" className="text-gray-600 hover:text-black"><i className="fab fa-youtube"></i></a>
         </div>
       </div>
     </footer>

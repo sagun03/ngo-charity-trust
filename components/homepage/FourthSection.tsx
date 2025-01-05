@@ -4,7 +4,7 @@ import { RiUserCommunityLine } from "react-icons/ri";
 
 const FourthSection = () => {
   return (
-    <section className="h-full md:h-[800px] flex flex-col md:flex-row items-center justify-between text-center md:text-left p-8 lg:p-24 gap-14 bg-[#D9DFE5]">
+    <section className="h-full md:h-[800px] flex flex-col md:flex-row items-center justify-between text-center md:text-left p-8 pb-20 lg:p-24 gap-14 bg-[#D9DFE5]">
 
       <div className="mt-8 md:mt-0 md:w-1/2">
         <h2 className="text-3xl md:text-5xl xl:text-6xl font-semibold mb-5">
